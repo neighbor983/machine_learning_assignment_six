@@ -1,0 +1,1 @@
+3. Estimate ratings user U2 may give to movies M3, M8 and M9 using content based approach.

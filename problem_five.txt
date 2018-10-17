@@ -1,0 +1,1 @@
+5. Estimate ratings user U2 may give to movies M9 using user-user collaboration approach.
