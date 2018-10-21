@@ -1,1 +1,31 @@
 7. 	Currently U8 has just finished rating M1.  What movie would you recommend using Item-association approach?
+
+|          | M1   | M2  | M3  |  M4 | M8 | M10 | M11 |
+| U8       | 4    |     |     |     |    |     |     |
+
+| Action   | 0.8  | 0.3 | 0.2 |	0.2 | 0.2 | 0.6 | 0.2 |
+| Comedy   | 0.1  | 0.4 | 0.4 |	0.2 | 0.3 | 0   | 0.3 |
+| Romance  | 0.05 | 0.1 | 0.4 |	0.3 | 0.3 | 0.3 | 0.3 |
+| Violence | 0.05 | 0.2 | 0   |	0.3 | 0.2 | 0.1 | 0.2 |
+
+Show a movie U8 hasn't seen
+M2, M3, M4, M8, M10, M11
+
+M1 =  [ 0.8 , 0.1, 0.05, 0.05 ]; 
+M2 =  [ 0.3, 0.4, 0.1, 0.2 ];
+M3 =  [ 0.2, 0.4, 0.4, 0.0 ];
+M4 =  [ 0.2, 0.2, 0.3, 0.3 ];
+M8 =  [ 0.2, 0.3, 0.3, 0.2 ];
+M10 = [ 0.6, 0.0, 0.3, 0.1 ];
+M11 = [ 0.2, 0.3, 0.3, 0.2 ];
+
+Using Euclidean Distance
+
+M1 to M2: 0.6041522986797286 ~ .60
+M1 to M3: 0.7582875444051551 ~ .76
+M1 to M4: 0.7035623639735145 ~ .70
+M1 to M8: 0.696419413859206 ~ .70
+M1 to M10: 0.33911649915626346 ~ .34
+M1 to M11: 0.696419413859206 ~ .70
+
+Of the movies that U8 hasn't seen M10 is the most similar to M1.

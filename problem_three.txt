@@ -1,1 +1,28 @@
 3. Estimate ratings user U2 may give to movies M3, M8 and M9 using content based approach.
+
+|          |  M3  |  M8 |  M9 |
+| -------- | ---- | --- | --- | 
+| Action   | 0.2  | 0.2 | 0.7 |
+| Comedy   | 0.4  | 0.3 | 0.1 |
+| Romance  | 0.4  | 0.3 | 0   |
+| Violence | 0    | 0.2 | 0.1 |
+
+**Assumption Using the User profile from problem 2
+User Profile = U = [ 2.93, .3, .75, .35 ];
+
+Cos(U2, M3) = dot( U, M3 ) / (|U| * |M3|) 
+Cos(U2, M8) = dot( U, M8 ) / (|U| * |M8|)
+Cos(U2, M9) = dot( U, M9 ) / (|U| * |M9|) 
+
+UM3 = (2.93 * .2 + .3 * .4 + .75 * .4 + .35 * 0 ) / (math.sqrt( ( 2.93 ** 2) + ( .3 ** 2 ) + ( .75 ** 2 ) + ( .35 ** 2)) * math.sqrt( ( .2 ** 2 ) + ( .4 ** 2 )+ ( .4 ** 2) + ( 0 ** 2 ) ))
+M3Rating = UM3 * 5;
+
+UM8 = (2.93 * .2 + .3 * .3 + .75 * .3 + .35 * .2 ) / (math.sqrt( ( 2.93 ** 2) + ( .3 ** 2 ) + ( .75 ** 2 ) + ( .35 ** 2)) * math.sqrt( ( .2 ** 2 ) + ( .3 ** 2 )+ ( .3 ** 2) + ( .2 ** 2 ) ))
+M8Rating = UM8 * 5;
+
+UM9 = (2.93 * .7 + .3 * .1 + .75 * 0 + .35 * .1 ) / (math.sqrt( ( 2.93 ** 2) + ( .3 ** 2 ) + ( .75 ** 2 ) + ( .35 ** 2)) * math.sqrt( ( .7 ** 2 ) + ( .1 ** 2 )+ ( 0 ** 2) + ( .1 ** 2 ) ))
+M9Rating = UM9 * 5;
+
+M3Rating = 2.7401928593355365 ~ 2.74
+M8Rating = 3.1121961122031228 ~ 3.11
+M9Rating = 4.842448105274039 ~ 4.54

@@ -1,2 +1,6 @@
 6. Estimate ratings user U2 may give to movies M9 using item-item collaboration approach.
 
+S(u, i) = ravg(i) +  Σj ε N [(r(u, j) – ravg(j)) * w(i, j)] / Σj ε N |w(i, j)|
+
+w(i, j) = Σu ε U [(r(u, i) -  ravg(i))*(r(u, j) – ravg(j))] / [σ(i)σ(j)]
+
